@@ -22,6 +22,10 @@
   color: #8b6e4c;
 }
 
+.background {
+  background: linear-gradient(180deg, #f1f7ff 0%, rgba(241, 247, 255, 0) 100%);
+}
+
 h1,
 h2,
 button {
@@ -257,7 +261,6 @@ section.about-us a {
   background-size: 20px;
 }
 section.join-us {
-  background: linear-gradient(180deg, #f1f7ff 0%, rgba(241, 247, 255, 0) 100%);
   padding: 10rem 0;
   text-transform: uppercase;
 }
@@ -309,7 +312,7 @@ section.map {
   padding-top: 10rem;
 }
 section.why-dsg {
-  margin-top: 10rem;
+  padding-top: 10rem;
 }
 section.why-dsg img.hello-world {
   height: 4rem;
@@ -360,15 +363,11 @@ section.feature img.demo {
   section.feature .toggle-sticky.lock {
     position: absolute !important;
     max-width: 100% !important;
-  
   }
   section.feature .toggle-sticky {
-  position: absolute;
+    position: absolute;
+  }
 }
-
-}
-
-
 
 section.feature img.link-out {
   height: 6rem;
@@ -382,7 +381,6 @@ section.feature img.link-out {
 section.hero {
   padding-top: 10rem;
   padding-bottom: 20rem;
-  background: linear-gradient(180deg, #f1f7ff 0%, rgba(241, 247, 255, 0) 100%);
 }
 
 section.hero h1 {
@@ -406,7 +404,6 @@ section.hero .get-started {
 section.hero .get-started p {
   color: #243e8c;
   margin-top: 1rem;
-
 }
 
 html {
@@ -416,6 +413,49 @@ html {
 
 @media screen and (min-width: 992px) {
   .navbar {
-    height: 60px;  
+    height: 60px;
   }
+}
+
+.wave-bg {
+  max-width: 100%;
+  margin-top: 5rem;
+}
+
+section.use-case {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+section.use-case h1 {
+  margin-bottom: 0;
+}
+
+
+section.use-case .title {
+  margin-bottom: 6rem;
+}
+section.use-case h2 {
+  margin-bottom: 1rem;
+}
+section.use-case p {
+  margin-bottom: 0;
+}
+
+section.use-case .row {
+  margin-bottom: 5rem;
+}
+
+section.developer {
+  padding-top:10rem;
+  padding-bottom: 10rem;
+}
+
+section.developer h1 {
+  margin-bottom: 2rem;
+  color: #8b6e4c;
+}
+
+section.developer p {
+  margin-bottom: 2rem;
 }
