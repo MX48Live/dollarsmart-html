@@ -254,7 +254,7 @@ section.about-us a {
   text-transform: uppercase;
   margin-bottom: 2rem;
   display: inline-block;
-  background-image: url("/img/about-us-arrow.png");
+  background-image: url("../img/about-us-arrow.png");
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 30px;
@@ -329,7 +329,7 @@ ul.with-check {
 ul.with-check li {
   margin-bottom: 1rem;
   list-style: none;
-  background-image: url("/img/check.png");
+  background-image: url("../img/check.png");
   background-repeat: no-repeat;
   padding-left: 25px;
   background-size: 15px;
@@ -431,7 +431,6 @@ section.use-case h1 {
   margin-bottom: 0;
 }
 
-
 section.use-case .title {
   margin-bottom: 6rem;
 }
@@ -447,7 +446,7 @@ section.use-case .row {
 }
 
 section.developer {
-  padding-top:10rem;
+  padding-top: 10rem;
   padding-bottom: 10rem;
 }
 
@@ -458,4 +457,17 @@ section.developer h1 {
 
 section.developer p {
   margin-bottom: 2rem;
+}
+footer .email {
+  background-image: url("../img/email.png");
+}
+footer .tel {
+  background-image: url("../img/phone.png");
+}
+
+footer .email,
+footer .tel {
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-size: 20px;
 }
