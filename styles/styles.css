@@ -230,6 +230,9 @@ header .navbar-toggler {
   padding: 0 1rem;
   border-radius: 6px;
 }
+section.seen-in {
+  padding-top: 10rem;
+}
 section.seen-in img {
   max-height: 30px;
   margin-left: 2rem;
@@ -256,7 +259,7 @@ section.join-us {
   text-transform: uppercase;
 }
 section.testimonial {
-  padding: 10rem 0;
+  padding: 10rem 0 0 0;
 }
 section.testimonial .item {
   background: #ffffff;
@@ -292,4 +295,8 @@ section.testimonial .detail {
 section.testimonial .customer-detail .avatar img {
   border-radius: 50%;
   margin-left: 1rem;
+}
+
+section.map {
+  padding-top: 10rem;
 }
