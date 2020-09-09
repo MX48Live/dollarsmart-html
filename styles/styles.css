@@ -149,7 +149,6 @@ html {
 
 .select2 .select2-selection__rendered span {
   line-height: 40px;
-
 }
 img {
   max-width: 100%;
@@ -213,7 +212,6 @@ header .navbar .nav-item {
   border-bottom: 3px solid transparent;
 }
 
-
 header .navbar .nav-item:hover,
 header .navbar .nav-item.active {
   border-bottom: 3px solid #8b6e4c;
@@ -223,7 +221,6 @@ header .navbar .nav-item a {
   font-weight: bold;
   text-transform: uppercase;
   padding: 2rem 1rem;
-  
 }
 
 header .navbar-toggler {
@@ -240,7 +237,6 @@ section.seen-in img {
 }
 section.about-us {
   padding: 5rem 0 10rem 0;
-
 }
 section.about-us a {
   font-size: 2rem;
@@ -248,15 +244,52 @@ section.about-us a {
   text-transform: uppercase;
   margin-bottom: 2rem;
   display: inline-block;
-  background-image: url('/img/about-us-arrow.png');
+  background-image: url("/img/about-us-arrow.png");
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 30px;
   background-size: 20px;
 }
 section.join-us {
-  background: linear-gradient(180deg, #F1F7FF 0%, rgba(241, 247, 255, 0) 100%);
+  background: linear-gradient(180deg, #f1f7ff 0%, rgba(241, 247, 255, 0) 100%);
   padding: 10rem 0;
   text-transform: uppercase;
 }
+section.testimonial {
+  padding: 10rem 0;
+}
+section.testimonial .item {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  height: 270px;
+  position: relative;
+  margin-bottom: 3rem;
+}
 
+section.testimonial .customer-detail {
+  float: right;
+}
+
+section.testimonial .avatar,section.testimonial  .detail {
+  float: right;
+  text-align: right;
+}
+
+section.testimonial .detail .name p {
+  color: #8B6D4A;
+  font-weight: bold;
+}
+section.testimonial .customer-detail {
+  position: absolute;
+  bottom: 3rem;
+  right:3rem;
+}
+
+section.testimonial .detail {
+  margin-top: 10px;
+}
+section.testimonial .customer-detail .avatar img {
+  border-radius: 50%;
+  margin-left: 1rem;
+}
