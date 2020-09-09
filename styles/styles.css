@@ -28,6 +28,7 @@ button {
   font-family: "Helvetica Neue LT Std 77 Bold Condensed" !important;
   font-weight: bold;
   color: #243e8c;
+  text-transform: uppercase;
 }
 p,
 li {
@@ -51,6 +52,7 @@ span {
 h1 {
   font-size: 4rem;
   line-height: 1.4em;
+  margin-bottom: 5rem;
 }
 h2 {
   font-size: 3rem;
@@ -299,4 +301,21 @@ section.testimonial .customer-detail .avatar img {
 
 section.map {
   padding-top: 10rem;
+}
+section.why-dsg {
+  margin-top: 10rem;
+}
+section.why-dsg ul {
+  padding: 0;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+section.why-dsg ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+  background-image: url('/img/check.png');
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  background-size: 15px;
+  background-position: 0 5px;
 }
