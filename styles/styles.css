@@ -55,6 +55,7 @@ h1 {
 h2 {
   font-size: 3rem;
   line-height: 1.4em;
+  margin-bottom: 3rem;
 }
 p,
 li {
@@ -133,12 +134,22 @@ html {
   color: #243e8c;
 }
 
+.select2 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .select2 .select2-selection {
   height: 4rem;
 }
 
+.select2 .select2-selection__rendered {
+  text-align: left !important;
+}
+
 .select2 .select2-selection__rendered span {
   line-height: 40px;
+
 }
 img {
   max-width: 100%;
@@ -222,3 +233,25 @@ header .navbar-toggler {
   padding: 0 1rem;
   border-radius: 6px;
 }
+section.about-us {
+  padding: 10rem 0;
+
+}
+section.about-us a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: inline-block;
+  background-image: url('/img/about-us-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 30px;
+  background-size: 20px;
+}
+section.join-us {
+  background: linear-gradient(180deg, #F1F7FF 0%, rgba(241, 247, 255, 0) 100%);
+  padding: 10rem 0;
+  text-transform: uppercase;
+}
+
