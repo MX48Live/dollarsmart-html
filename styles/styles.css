@@ -35,7 +35,8 @@ button {
   text-transform: uppercase;
 }
 p,
-li {
+li,
+label {
   font-family: "Helvetica Neue LT Std 57 Condensed" !important;
   font-weight: normal;
   font-size: 16px;
@@ -470,4 +471,29 @@ footer .tel {
   padding-left: 30px;
   background-repeat: no-repeat;
   background-size: 20px;
+}
+
+input, textarea {
+  font-size: 1.6rem !important;
+}
+
+.modal-body.contact div {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+
+.modal-body.contact div p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.modal-body.contact div h2 {
+  margin-bottom: 0;
+  color: #8b6e4c;
+}
+.modal-body.contact div:first-child {
+  border-right: 1px solid #ccc;
 }

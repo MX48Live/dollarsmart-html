@@ -92,8 +92,8 @@
                     <b>global locations</b> as well. </li>
                 </ul>
                 <div class="end-sticky"></div>
-                <!-- <p><a href="#" class="end-sticky"><u>Contact our sales team</u></a></p>
-                <p class="gold">For further information on our customised payments solutions.</p> -->
+                <p><a href="#" class="end-sticky" data-toggle="modal" data-target="#contactUs"><u>Contact our sales team</u></a></p>
+                <p class="gold">For further information on our customised payments solutions.</p>
 
 
               </div>
@@ -171,8 +171,8 @@
                 <h1>Developer Friendly.</h1>
                 <p>DollarSmart Global offers state of the art systems and connectivity to local banking and payments networks, using our bespoke API, mobile and website applications. </p>
 
-                <!-- <p>Arrange to speak to our team for more details. </p>
-                <a href="" class="button">Request access</a> -->
+                <p>Arrange to speak to our team for more details. </p>
+                <a href="" class="button"  data-toggle="modal" data-target="#contactUs">Request access</a>
               </div>
             </div>
           </div>
@@ -302,7 +302,7 @@
           <div class="container">
             <div class="row justify-content-center text-center">
             <div class="col-12 col-sm-12 col-md-10 col-lg-8">
-              <p><a href="#">Learn more about us</a></p>
+              <p><a href="./aboutus.html">Learn more about us</a></p>
               <iframe
                 width="100%"
                 height="500"
@@ -316,25 +316,13 @@
         </div>
         </section>
 
-        <section class="join-us" id="smooth-scroll-join-us">
+        <section class="join-us background" id="smooth-scroll-join-us">
           <div class="container text-center">
-            <h2>Join Us Now</h2>
-            <div class="row where justify-content-center">
-              <div class="col-12 col-sm-8 col-md-4">
-              <p>Where are you ?</p>
-              
-              <select
-                class="js-country-select"
-                name="state"
-                style="width: 100%; height: 50px"
-              >
-                <option value="flag-aus">Australia</option>
-                <option value="flag-th">Thailand</option>
-                <option value="flag-hk">Hongkong</option>
-              </select>
-            </div>
-            </div>
-            <a href="https://audsmart.com/" class="button site-switcher" target="_blank">LET’S GET STARTED</a>
+        
+              <h2>Do you want to make online, fast, convenient <br/>and cost effective payments into Asia?</h2>
+              <br/>
+              <a href="" class="button"  data-toggle="modal" data-target="#contactUs">Request access</a>
+            
           </div>
         </section>
      
@@ -386,6 +374,69 @@
       </div>
     </footer>
     <div class="copy"><p>Copyright@2014-2018 DOLLARSMART GLOBAL PTE. LTD. All rights reserved</p></div>
+
+
+    <div class="modal fade" id="contactUs" tabindex="-1" aria-labelledby="contactUsLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="contactUsLabel">Contact Us</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body contact">
+            <div class="div">
+              <h2>Email</h2>
+            <p>info@dollarsmart.co</p>
+          </div>
+          <div class="div">
+            <h2>Call</h2>
+            <p>(+66)53 215 586</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- <div class="modal fade" id="contactUs" tabindex="-1" aria-labelledby="contactUsLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="contactUsLabel">Contact Us</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form>
+          <div class="modal-body">
+            
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="telephone">Telephone Number</label>
+                <input type="number" class="form-control" id="telephone">
+              </div>
+              <div class="form-group">
+                <label for="description">How can we help you?</label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+              </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button">SUBMIT</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
