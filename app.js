@@ -25,15 +25,20 @@ $(document).ready(function () {
   });
 
   $(".js-country-select").change(function () {
+    console.log(this.value);
+
     switch (this.value) {
       case "flag-aus":
         selectedURL = "https://audsmart.com";
+        $("a.site-switcher").attr("href", selectedURL);
         break;
       case "flag-th":
         selectedURL = "https://bahtsmart.com";
+        $("a.site-switcher").attr("href", selectedURL);
         break;
       case "flag-hk":
         selectedURL = "https://hkdsmart.com";
+        $("a.site-switcher").attr("href", selectedURL);
         break;
       default:
         selectedURL = "";
