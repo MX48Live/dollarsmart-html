@@ -283,6 +283,10 @@ section.testimonial .detail {
   text-align: right;
 }
 
+section.testimonial .avatar img {
+  max-width: 50px;
+}
+
 section.testimonial .detail .name p {
   color: #8b6d4a;
   font-weight: bold;
