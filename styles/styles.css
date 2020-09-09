@@ -497,3 +497,73 @@ input, textarea {
 .modal-body.contact div:first-child {
   border-right: 1px solid #ccc;
 }
+
+section.team-photo img {
+  width: 100%;
+}
+section.about-us-page {
+  padding: 5rem 0 5rem 0;
+}
+section.about-us-page p {
+  color: #8b6e4c;
+}
+section.founder {
+  padding: 5rem 0 5rem 0;
+}
+section.founder h2 {
+  margin-bottom: 5rem;
+}
+section.founder img {
+  margin-bottom: 2rem;
+  border-radius: 50%;
+}
+section.founder p {
+  margin-bottom: 0;
+}
+section.founder p.gold {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+section.teams {
+  padding: 5rem 0 5rem 0;
+}
+section.teams h2 {
+  margin-bottom: 5rem;
+}
+section.teams img {
+  margin-bottom: 1rem;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+section.teams p {
+  margin-bottom: 0;
+}
+section.teams p.gold {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+}
+
+section.our-network, 
+section.our-ragulated {
+  background-color: #243E8C;
+}
+
+section.our-network {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+section.our-ragulated {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+section.our-network *,
+section.our-ragulated * {
+  color: #ffffff;
+} 
