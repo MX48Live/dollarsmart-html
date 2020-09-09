@@ -233,8 +233,13 @@ header .navbar-toggler {
   padding: 0 1rem;
   border-radius: 6px;
 }
+section.seen-in img {
+  max-height: 30px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 section.about-us {
-  padding: 10rem 0;
+  padding: 5rem 0 10rem 0;
 
 }
 section.about-us a {
