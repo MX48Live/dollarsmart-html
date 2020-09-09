@@ -60,28 +60,34 @@
     </header>
 
     <article>
-        <div class="">
-          <section class="hero">
+        <section class="hero">
+          <div class="container text-center">
             <h1>Your money Revolution</h1>
             <p>
               With Dollarsmart Global it becomes Safer & Easier for you to
-              transfer money internationally at great exchange rates and no fees
+              transfer money internationally <br/>at great exchange rates and no fees
               and charges.
             </p>
-            <a href="#" class="button">Let's Get Started</a>
-            <p>
-              Register at our website now & transfer your money anywhere,
-              anytime on any device.
-            </p>
-          </section>
-        </div>
-
-        <div class="">
-          <section class="feature">
-            <div class="col">
-              <img src="/img/phone-demo.png" alt="" />
+            <div class="get-started">
+              <p>
+                Register at our website now & transfer your money anywhere,<br/>
+                anytime on any device.
+              </p>
+              <a href="#smooth-scroll-join-us" class="button js-get-started">Let's Get Started</a>
             </div>
-            <div class="col">
+          </div>
+        </section>
+       
+
+        <section class="feature">
+          <div class="container">
+            <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="text-center">
+              <img src="/img/phone-demo.png" alt=""  class="demo" />
+            </div>
+            </div>
+            <div class="col-12 col-md-6">
               <h2>NEED TO SEND MONEY TO ASIA or AFrica?</h2>
               <p>
                 We are your Asian and African payment specialist. We can send
@@ -92,15 +98,24 @@
                 We are Fast, Cost Effective and Convenient. Check out our
                 solutions at.
               </p>
-              <img src="/img/hkd-logo.png" alt="" />
-              <img src="/img/aud-logo.png" alt="" />
-              <p>For our Australia to Thailand specialist solution.</p>
-              <img src="/img/bs-logo.png" alt="" />
-            </div>
-          </section>
-        </div>
+              <a href="https://hkdsmart.com/" target="_blank">
+                <img src="/img/hkd-logo.png" alt="" class="link-out" />
+              </a>
+              <a href="https://audsmart.com/" target="_blank">
+                <img src="/img/aud-logo.png" alt="" class="link-out" />
+              </a>
 
-      
+              <br/>
+              <br/>
+              <p>For our Australia to Thailand specialist solution.</p>
+              <a href="https://bahtsmart.com/" target="_blank">
+                <img src="/img/bs-logo.png" alt="" class="link-out" />
+              </a>
+            </div>
+          </div>
+          </div>
+        </section>
+
         <section class="why-dsg">
           <div class="container">
             <div class="text-center">
@@ -126,8 +141,6 @@
             </div>
           </div>
         </section>
-        
-
         
         <section class="map">
           <div class="container">
@@ -242,7 +255,7 @@
         </div>
         </section>
 
-        <section class="join-us">
+        <section class="join-us" id="smooth-scroll-join-us">
           <div class="container text-center">
             <h2>Join Us Now</h2>
             <div class="row where justify-content-center">
@@ -378,8 +391,8 @@
 
             $('section.join-us').find('a.button').attr("href", selectedURL)
           })
-
       });
+      
     </script>
   </body>
 </html>

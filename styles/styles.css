@@ -199,6 +199,7 @@ footer .social a img {
 
 header .navbar {
   background-color: #ffffff;
+  padding: 0;
 }
 
 header .navbar-brand {
@@ -276,19 +277,20 @@ section.testimonial .customer-detail {
   float: right;
 }
 
-section.testimonial .avatar,section.testimonial  .detail {
+section.testimonial .avatar,
+section.testimonial .detail {
   float: right;
   text-align: right;
 }
 
 section.testimonial .detail .name p {
-  color: #8B6D4A;
+  color: #8b6d4a;
   font-weight: bold;
 }
 section.testimonial .customer-detail {
   position: absolute;
   bottom: 3rem;
-  right:3rem;
+  right: 3rem;
 }
 
 section.testimonial .detail {
@@ -313,9 +315,66 @@ section.why-dsg ul {
 section.why-dsg ul li {
   margin-bottom: 1rem;
   list-style: none;
-  background-image: url('/img/check.png');
+  background-image: url("/img/check.png");
   background-repeat: no-repeat;
   padding-left: 25px;
   background-size: 15px;
   background-position: 0 5px;
+}
+section.feature {
+  margin-top: -10rem;
+}
+section.feature h2 {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+}
+section.feature img.demo {
+  max-width: 50rem;
+  width: 100%;
+}
+section.feature img.link-out {
+  height: 6rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+section.hero {
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+  background: linear-gradient(180deg, #f1f7ff 0%, rgba(241, 247, 255, 0) 100%);
+}
+
+section.hero h1 {
+  font-size: 6rem;
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+section.hero p {
+  color: #8B6E4C;
+}
+
+section.hero .get-started {
+  margin-top: 3rem;
+}
+section.hero .get-started p {
+  color: #243e8c;
+  margin-top: 1rem;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 60px;  
+  }
 }
