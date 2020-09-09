@@ -50,19 +50,12 @@
     <article>
         <section class="hero">
           <div class="container text-center">
-            <h1>Your money Revolution</h1>
-            <p>
-              With Dollarsmart Global it becomes Safer & Easier for you to
-              transfer money internationally <br/>at great exchange rates and no fees
-              and charges.
-            </p>
-            <div class="get-started">
-              <p>
-                Register at our website now & transfer your money anywhere,<br/>
-                anytime on any device.
-              </p>
-              <a href="#smooth-scroll-join-us" class="button js-get-started">Let's Get Started</a>
-            </div>
+            <h1>THE PREMIER ASIAN <br/>
+              ONLINE PAYMENTS SOLUTIONS
+              </h1>
+            <h2>
+              Meeting your Asian payments Needs with us.
+            </h2>
           </div>
         </section>
        
@@ -70,37 +63,37 @@
         <section class="feature">
           <div class="container">
             <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="text-center">
-              <img src="./img/phone-demo.png" alt=""  class="demo" />
-            </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <h2>NEED TO SEND MONEY TO ASIA or AFrica?</h2>
-              <p>
-                We are your Asian and African payment specialist. We can send
-                your money to your family and friends whether to a bank account
-                or digital wallet or for cash pickup.
-              </p>
-              <p>
-                We are Fast, Cost Effective and Convenient. Check out our
-                solutions at.
-              </p>
-              <a href="https://hkdsmart.com/" target="_blank">
-                <img src="./img/hkd-logo.png" alt="" class="link-out" />
-              </a>
-              <a href="https://audsmart.com/" target="_blank">
-                <img src="./img/aud-logo.png" alt="" class="link-out" />
-              </a>
+              <div class="col-12 col-md-6">
+                <h2>NEED TO SEND MONEY TO ASIA or AFrica?</h2>
+                <p>
+                  We are your Asian and African payment specialist. We can send
+                  your money to your family and friends whether to a bank account
+                  or digital wallet or for cash pickup.
+                </p>
+                <p>
+                  We are Fast, Cost Effective and Convenient. Check out our
+                  solutions at.
+                </p>
+                <a href="https://hkdsmart.com/" target="_blank">
+                  <img src="./img/hkd-logo.png" alt="" class="link-out" />
+                </a>
+                <a href="https://audsmart.com/" target="_blank">
+                  <img src="./img/aud-logo.png" alt="" class="link-out" />
+                </a>
 
-              <br/>
-              <br/>
-              <p>For our Australia to Thailand specialist solution.</p>
-              <a href="https://bahtsmart.com/" target="_blank">
-                <img src="./img/bs-logo.png" alt="" class="link-out" />
-              </a>
+                <br/>
+                <br/>
+                <p>For our Australia to Thailand specialist solution.</p>
+                <a href="https://bahtsmart.com/" target="_blank">
+                  <img src="./img/bs-logo.png" alt="" class="link-out" />
+                </a>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="text-center toggle-sticky">
+                  <img src="./img/phone-demo.png" alt=""  class="demo" />
+                </div>
+              </div>
             </div>
-          </div>
           </div>
         </section>
 
@@ -330,55 +323,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        function formatState(state) {
-          if (!state.id) {
-            return state.text;
-          }
-
-          var baseUrl = "./img/flags";
-          var $state = $('<span><img class="img-flag" /> <span></span></span>');
-
-          // Use .text() instead of HTML string concatenation to avoid script injection issues
-          $state.find("span").text(state.text);
-          $state
-            .find("img")
-            .attr(
-              "src",
-              baseUrl + "/" + state.element.value.toLowerCase() + ".png"
-            );
-
-          return $state;
-        }
-
-        $(".js-language-switcher").select2({
-          templateSelection: formatState,
-        });
-        $(".js-country-select").select2({
-          templateSelection: formatState,
-        });
-  
-        $(".js-country-select").change(function(){
-         
-            switch(this.value) {
-              case 'flag-aus':
-                selectedURL = 'https://audsmart.com'
-                break;
-              case 'flag-th':
-                selectedURL = 'https://bahtsmart.com'
-                break;
-              case 'flag-hk':
-                selectedURL = 'https://hkdsmart.com'
-                break;
-              default:
-                selectedURL =''
-            }
-
-            $('section.join-us').find('a.button').attr("href", selectedURL)
-          })
-      });
-      
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
