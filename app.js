@@ -39,15 +39,31 @@ $(".js-country-select").change(function () {
   }
 });
 
-var div_top = $("img.demo").offset().top;
-
 $(window).scroll(function () {
   var window_top = $(window).scrollTop() - 0;
-  if (window_top > div_top) {
-    if (!$("img.demo").is(".sticky")) {
-      $("img.demo").addClass("sticky");
+  var objectLocation = $(".toggle-sticky").offset().top;
+  var stickyPoint = $(".start-sticky").offset().top;
+  var expectEndSticky = $(".end-sticky").offset().top;
+  var objectHeigh = $("img.demo.business").height();
+  var endOfSticky = expectEndSticky - $("img.demo.business").height();
+
+  var setMarginTopOnEndSticky = expectEndSticky - stickyPoint - objectHeigh;
+
+  if (window_top > (stickyPoint - 100)) {
+    if (!$(".toggle-sticky").is(".sticky")) {
+      $(".toggle-sticky").addClass("sticky");
     }
   } else {
-    $("img.demo").removeClass("sticky");
+    $(".toggle-sticky").removeClass("sticky");
+  }
+
+  if (window_top > endOfSticky) {
+    if (!$(".toggle-sticky").is(".lock")) {
+      $(".toggle-sticky").addClass("lock");
+      $(".toggle-sticky").css("margin-top", setMarginTopOnEndSticky + 100);
+    }
+  } else {
+    $(".toggle-sticky").removeClass("lock");
+    $(".toggle-sticky").css("margin-top", 0);
   }
 });

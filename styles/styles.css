@@ -311,12 +311,19 @@ section.map {
 section.why-dsg {
   margin-top: 10rem;
 }
-section.why-dsg ul {
+section.why-dsg img.hello-world {
+  height: 4rem;
+  margin-left: 2rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+ul.with-check {
   padding: 0;
   margin-bottom: 3rem;
   margin-left: 2rem;
+  margin-top: 2rem;
 }
-section.why-dsg ul li {
+ul.with-check li {
   margin-bottom: 1rem;
   list-style: none;
   background-image: url("/img/check.png");
@@ -333,16 +340,36 @@ section.feature h2 {
   margin-bottom: 1rem;
 }
 section.feature img.demo {
-  max-width: 50rem;
+  max-width: 45rem;
   width: 100%;
+  margin-top: 2rem;
 }
-section.feature img.demo.sticky {
-  position: fixed;
-  top: 0;
+
+@media screen and (max-width: 767px) {
+  section.feature .toggle-sticky {
+    margin-top: 10rem !important;
+  }
 }
-section.feature .toggle-sticky {
+
+@media screen and (min-width: 768px) {
+  section.feature .toggle-sticky.sticky {
+    position: fixed;
+    max-width: 44%;
+    top: 0;
+  }
+  section.feature .toggle-sticky.lock {
+    position: absolute !important;
+    max-width: 100% !important;
+  
+  }
+  section.feature .toggle-sticky {
   position: absolute;
 }
+
+}
+
+
+
 section.feature img.link-out {
   height: 6rem;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
